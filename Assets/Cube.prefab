@@ -37,8 +37,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4464935846351330}
-  - component: {fileID: 114336480823268010}
   - component: {fileID: 114725322897761958}
+  - component: {fileID: 114736983544637418}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -448,7 +448,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d5a28373a3b162f48b943d430ffe2b48, type: 2}
+  - {fileID: 2100000, guid: c314e851705e9404180cfbd7a1747213, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -649,18 +649,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
---- !u!114 &114336480823268010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1174856034686332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84866be3806226448a440b31128d653d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridSize: 10
 --- !u!114 &114725322897761958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -670,5 +658,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57de3c4550b4b804687f1107b67b99b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114736983544637418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174856034686332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84866be3806226448a440b31128d653d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

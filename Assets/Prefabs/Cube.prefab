@@ -37,9 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4464935846351330}
   - component: {fileID: 114725322897761958}
-  - component: {fileID: 114736983544637418}
-  - component: {fileID: 114221798324458248}
-  - component: {fileID: 114458758639577392}
+  - component: {fileID: 114132980205757542}
+  - component: {fileID: 65167363191782562}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -103,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1174856034686332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 10}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4386964928026552}
@@ -267,6 +266,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65167363191782562
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174856034686332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: -5, z: 0}
 --- !u!102 &102347986479147202
 TextMesh:
   serializedVersion: 3
@@ -274,7 +285,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954122835854548}
-  m_Text: 2,1
+  m_Text: 1,0
   m_OffsetZ: 0
   m_CharacterSize: 2
   m_LineSpacing: 1
@@ -288,18 +299,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
---- !u!114 &114221798324458248
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1174856034686332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84866be3806226448a440b31128d653d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114458758639577392
+--- !u!114 &114132980205757542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -323,14 +323,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isExplored: 0
   exploredFrom: {fileID: 0}
---- !u!114 &114736983544637418
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1174856034686332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84866be3806226448a440b31128d653d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

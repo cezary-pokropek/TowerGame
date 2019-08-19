@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4863665214869294}
   - component: {fileID: 114869114408138340}
-  - component: {fileID: 114563372664030418}
+  - component: {fileID: 54160117043446938}
+  - component: {fileID: 114014885335562780}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -38,7 +39,6 @@ GameObject:
   - component: {fileID: 4724407382619142}
   - component: {fileID: 33673410975196162}
   - component: {fileID: 23406914294627970}
-  - component: {fileID: 54489513715046296}
   - component: {fileID: 65099109973473078}
   m_Layer: 0
   m_Name: Body
@@ -115,12 +115,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1530574681033442}
   m_Mesh: {fileID: 4300000, guid: 042c32b34794f584aa882ba5397f2c19, type: 3}
---- !u!54 &54489513715046296
+--- !u!54 &54160117043446938
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1530574681033442}
+  m_GameObject: {fileID: 1374651281610836}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -142,7 +142,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.000004, y: 14, z: 13.000003}
   m_Center: {x: 0, y: 7, z: 0}
---- !u!114 &114563372664030418
+--- !u!114 &114014885335562780
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ccaf590fda3cd4c9de70552206afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoints: 4
 --- !u!114 &114869114408138340
 MonoBehaviour:
   m_ObjectHideFlags: 1

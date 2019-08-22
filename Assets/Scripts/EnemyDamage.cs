@@ -7,6 +7,8 @@ public class EnemyDamage : MonoBehaviour
 {
 
     [SerializeField] int hitPoints = 10;
+    [SerializeField] ParticleSystem hitParticlePrefab;
+    [SerializeField] ParticleSystem EnemyDeathParticlePrefab;
 
     // Use this for initialization
     void Start()
@@ -27,10 +29,13 @@ public class EnemyDamage : MonoBehaviour
     {
         hitPoints -= 1;
         //print("Hit Points left: " + hitPoints);
+        hitParticlePrefab.Play();
     }
 
     private void KillEnemy()
     {
+        var vfx = Instantiate(EnemyDeathParticlePrefab, transform.position, Quaternion.identity);
+        vfx.Play();
         Destroy(gameObject);
     }
 
